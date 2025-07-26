@@ -24,13 +24,13 @@ Here are some ideas to get you started:
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=BullyMaguire-lol&theme=tokyonight&hide_border=true" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api?username=YourUsername&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=BullyMaguire-lol&show_icons=true&theme=tokyonight&hide_border=true" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YourUsername&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BullyMaguire-lol&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YourUsername&style=flat-square&color=blue" alt="visitor badge"/>
+  <img src="https://komarev.com/ghpvc/?username=BullyMaguire-lol&style=flat-square&color=blue" alt="visitor badge"/>
 </p>
