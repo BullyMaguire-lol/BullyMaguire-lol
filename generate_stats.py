@@ -1,40 +1,31 @@
-import requests
-import json
-from datetime import datetime
+name: Update custom stats
 
-USERNAME = "BullyMaguire-lol"
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
-url = f"https://api.github.com/users/{USERNAME}"
-data = requests.get(url).json()
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-repos = data.get("public_repos", 0)
-followers = data.get("followers", 0)
-following = data.get("following", 0)
+    steps:
+      - uses: actions/checkout@v4
 
-svg = f"""
-<svg width="450" height="180" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#0f172a"/>
-  <text x="20" y="40" fill="#38bdf8" font-size="22" font-family="monospace">
-    GitHub Stats — {USERNAME}
-  </text>
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-  <text x="20" y="80" fill="#e5e7eb" font-size="16" font-family="monospace">
-    📦 Public Repos: {repos}
-  </text>
+      - run: pip install requests
 
-  <text x="20" y="110" fill="#e5e7eb" font-size="16" font-family="monospace">
-    👥 Followers: {followers}
-  </text>
+      - run: python generate_stats.py
 
-  <text x="20" y="140" fill="#e5e7eb" font-size="16" font-family="monospace">
-    🔗 Following: {following}
-  </text>
-
-  <text x="20" y="165" fill="#6b7280" font-size="12" font-family="monospace">
-    Updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}
-  </text>
-</svg>
-"""
-
-with open("assets_stats.svg", "w") as f:
-    f.write(svg)
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add assets_stats.svg
+          git commit -m "Update stats" || echo "Nothing to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
