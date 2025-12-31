@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 ### 📈 My GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BullyMaguire-lol&theme=tokyonight&hide_border=true" />
+  <img src="[https://github-readme-streak-stats.herokuapp.com/?user=BullyMaguire-lol&theme=tokyonight&hide_border=true](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BullyMaguire-lol&theme=tokyonight)" />
   <br><br>
 </p>
 
