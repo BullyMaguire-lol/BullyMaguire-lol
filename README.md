@@ -12,8 +12,7 @@
 </tr>    
 </table>    
 
-
-<img src="https://github-readme-stats.vercel.app/api?username=BullyMaguire-lol&show_icons=true&theme=dark" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=BullyMaguire-lol&show_icons=true&theme=dark" />
     
 <p align="center">    
   <img src="https://img.shields.io/github/followers/BullyMaguire-lol?label=Followers&style=flat-square&color=7aa2f7"/>    
