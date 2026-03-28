@@ -1,4 +1,4 @@
-### 📈 GitHub Activity
+### 📈 GitHub Activity  
 
 <table>
 <tr>
@@ -11,6 +11,10 @@
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=BullyMaguire-lol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/BullyMaguire-lol?label=Followers&style=flat-square&color=7aa2f7"/>
